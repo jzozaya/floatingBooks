@@ -7,11 +7,6 @@ const tintColorOrange = '#e84b32'
 
 export default {
   light: {
-    // text: '#000',
-    // background: '#fff',
-    // tint: tintColorLight,
-    // tabIconDefault: '#ccc',
-    // tabIconSelected: tintColorLight,
     text: tintColorBlue,
     background: tintColorDark,
     tint: tintColorOrange,
@@ -19,11 +14,11 @@ export default {
     tabIconSelected: tintColorOrange,
   },
   colorful: {
-    text: tintColorOrange,
-    background: tintColorGray,
-    tint: tintColorGray,
-    tabIconDefault: '#ccc',
-    tabIconSelected: tintColorGray,
+    // text: '#000',
+    // background: '#fff',
+    // tint: tintColorLight,
+    // tabIconDefault: '#ccc',
+    // tabIconSelected: tintColorLight,
   },
   dark: {
     text: '#fff',

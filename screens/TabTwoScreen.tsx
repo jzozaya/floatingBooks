@@ -52,13 +52,13 @@ export default function TabTwoScreen() {
       <View style={styles.separator} lightColor="#eee" darkColor="rgba(255,255,255,0.1)" />
       <EditScreenInfo path="/screens/TabTwoScreen.tsx" />
       <ListItem /> */}
-      {/* <ListItem /> */}
+      
       <TouchableOpacity style={styles.floatingButton} onPress={onAdd}>
         <Text style={{ color: 'white', fontSize: 40 }}>+</Text>
       </TouchableOpacity>
       <ScrollView
         style={{ flex: 1 }}
-        contentContainerStyle={{ paddingVertical: 30 }}
+        contentContainerStyle={{ paddingVertical: 50 }}
       >
         {items.map((item, index) => {
           return (
