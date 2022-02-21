@@ -11,7 +11,6 @@ import useColorScheme from '../hooks/useColorScheme'
 export function useThemeColor(
   props: { light?: string, dark?: string },
   colorName: keyof typeof Colors.light & keyof typeof Colors.dark
-  //colorName: keyof typeof Colors.colorful & keyof typeof Colors.colorful
 ) {
   const theme = useColorScheme()
   const colorFromProps = props[theme]
@@ -26,22 +25,21 @@ export function useThemeColor(
 type ThemeProps = {
   lightColor?: string
   darkColor?: string
-  colorful?: string
 }
 
 export type TextProps = ThemeProps & DefaultText['props']
 export type ViewProps = ThemeProps & DefaultView['props']
 
 export function Text(props: TextProps) {
-  const { style, lightColor, darkColor, colorful, ...otherProps } = props
-  const color = useThemeColor({ light: colorful, dark: colorful }, 'text')
+  const { style, lightColor, darkColor, ...otherProps } = props
+  const color = useThemeColor({ light: lightColor, dark: darkColor }, 'text')
 
   return <DefaultText style={[{ color }, style]} {...otherProps} />
 }
 
 export function View(props: ViewProps) {
-  const { style, lightColor, darkColor, colorful, ...otherProps } = props
-  const backgroundColor = useThemeColor({ light: colorful, dark: colorful }, 'background')
+  const { style, lightColor, darkColor, ...otherProps } = props
+  const backgroundColor = useThemeColor({ light: lightColor, dark: darkColor }, 'background')
 
   return <DefaultView style={[{ backgroundColor }, style]} {...otherProps} />
 }
