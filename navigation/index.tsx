@@ -68,7 +68,7 @@ function BottomTabNavigator() {
         component={TabOneScreen}
         options={({ navigation }: RootTabScreenProps<'TabOne'>) => ({
           title: 'Tab One',
-          tabBarIcon: ({ color }) => <TabBarIcon name="code" color={color} />,
+          tabBarIcon: ({ color }) => <TabBarIcon name="home" color={color} />,
           //headerShadowVisible: false,
           
           headerRight: () => (
@@ -92,7 +92,7 @@ function BottomTabNavigator() {
         component={TabTwoScreen}
         options={{
           title: 'Two',
-          tabBarIcon: ({ color }) => <TabBarIcon name="eye" color={color} />,
+          tabBarIcon: ({ color }) => <TabBarIcon name="user" color={color} />,
           headerShown: false,
         }}
       />

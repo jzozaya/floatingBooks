@@ -28,13 +28,9 @@ export default function TabThreeScreen({ navigation }: RootTabScreenProps<'TabTh
   return (
     <GestureHandlerRootView style={{ flex: 1 }}>
       <SafeAreaView style={styles.container}>
-        {/* <Text style={styles.title}>Tab Three</Text>
-        
-        <View style={styles.separator} lightColor="#171717" darkColor="rgba(255,255,255,0.1)" />
-        <EditScreenInfo path="/screens/TabOneScreen.tsx" /> */}
         <TouchableOpacity style={styles.button} onPress={onPress} />
         <BottomSheet ref={ref}>
-          <View style={{ flex: 1, backgroundColor: 'orange' }} />
+          <View style={{ flex: 1, backgroundColor: '#203699' }} />
         </BottomSheet>
       </SafeAreaView>
     </GestureHandlerRootView>

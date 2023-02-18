@@ -29,6 +29,8 @@ export default function TabTwoScreen() {
   }, [])
 
   // new Array(5).fill(0).map((_, index) => ({ id: index }))
+
+  
   const [items, setItems] = useState<Item[]>(
     new Array(3).fill(0).map((_, index) => ({ id: index }))
   )
